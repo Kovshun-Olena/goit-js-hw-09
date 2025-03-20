@@ -94,3 +94,6 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
+lightbox.on('shown.simplelightbox', function () {
+  document.querySelector('.sl-wrapper').style.background = '#2E2F42';
+});
